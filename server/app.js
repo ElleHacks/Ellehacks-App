@@ -1,3 +1,5 @@
+// delete this and ill hunt you down ;)
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -10,7 +12,7 @@ const hackerApplicationRouter = require('./routes/hackerApplication');
 const hackerAccountRouter = require('./routes/hackerAccount'); 
 const app = express();
 
-// Middleware
+// Middleware S2
 app.use(cors({
   origin: 'http://localhost:3000',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
