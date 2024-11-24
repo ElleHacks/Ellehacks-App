@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HackerApplicationForm from './pages/HackerApplicationForm';
+import Hacker from './pages/Hacker';
+import CreateAccountForm from './pages/CreateAccountForm'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/hacker-application" element={<HackerApplicationForm />} />
+        <Route path="/hacker" element={<Hacker />} />
+        <Route path="/create-account" element={<CreateAccountForm />} /> 
+      </Routes>
+    </Router>
   );
 }
 
