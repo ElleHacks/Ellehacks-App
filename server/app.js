@@ -10,6 +10,9 @@ const formRoutes = require('./routes/form');
 const hackerRouter = require('./routes/hacker');
 const hackerApplicationRouter = require('./routes/hackerApplication');
 const hackerAccountRouter = require('./routes/hackerAccount'); 
+const loginRouter = require('./routes/login'); 
+const registerRouter = require('./routes/register'); 
+const userPage = require('./routes/userPage'); 
 const app = express();
 
 // Middleware S2
@@ -24,7 +27,9 @@ app.use(bodyParser.json());
 app.use('/api/hacker', hackerRouter);
 app.use('/api/hackerApplication', hackerApplicationRouter);
 app.use('/api/hackerAccount', hackerAccountRouter);
-
+app.use('/login', loginRouter);
+app.use('/register', registerRouter);
+app.use('/api/user', userPage);
 // MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))

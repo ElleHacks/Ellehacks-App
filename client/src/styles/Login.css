@@ -1,0 +1,137 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    height: 100vh; 
+    width: 100%;
+  }
+  
+  .logo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+  }
+  
+  .logo {
+    width: 300px; 
+    height: auto;
+  }
+  
+  .form-container {
+    flex: 3;
+    display: flex;
+    zoom: 0.8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #899878;
+    background-image: url('../assets/flowers.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 90%; 
+    height: 75vh;
+    max-width: 1000px; 
+    margin: 20px; 
+    padding-top: 10%;
+  }
+  
+  form div {
+    width: 100%; 
+  }
+  
+  input {
+    padding: 10px;
+    width: 80%; 
+    box-sizing: border-box;
+    display: block; 
+    margin: 1vh auto  ; 
+    
+  }
+  
+  #submit {
+    padding: 10px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 5%;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  #WelcomeEllehacks {
+    font-size: 30px;
+    font-weight: bold;
+    color: #899878;
+    text-align: center; 
+  }
+
+  #showPassword {
+    position: absolute;
+    right: 10px; 
+    background: #f0f0f0; 
+    border: 1px solid #ccc; 
+    padding: 2px 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 12px; 
+    width: 50px;
+  }
+
+  hr{
+    margin-top: 5%;
+    width: 50%;
+    border: #b3b2b2 solid 1px;
+  }
+
+  .social-login-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px; 
+  }
+  
+  .social-button {
+    display: flex;
+    color: black;
+    align-items: center;
+    background-color: white; 
+    border: 1px solid #ccc; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+  }
+  
+  .social-button:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  .button-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+  }
+  #register{
+    padding: 10px;
+    cursor: pointer;
+    width: 30%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+  }
+

@@ -39,7 +39,7 @@ const CreateAccountForm = () => {
 
       if (response.ok) {
         alert('Account created successfully!');
-        navigate('/hacker-application');
+        navigate('Dashboard');
       } else {
         const errorData = await response.json();
         alert(errorData.message || 'Failed to create account.');
