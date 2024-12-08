@@ -20,7 +20,7 @@ npm start
 How to use git 
 
 git init
--
+------
 (setup git remote)
 -
 git add .
